@@ -4,7 +4,7 @@ defmodule Issues.CLI do
   @moduledoc """
   명령줄 파싱을 수행한 뒤, 각종 함수를 호출해 깃허브 프로젝트의 최근 _n_개 이슈를 표 형식으로 만들어 출력한다.
   """
-  def run(argv) do
+  def main(argv) do
     argv
     |> parse_args
     |> process
